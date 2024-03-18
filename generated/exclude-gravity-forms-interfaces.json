@@ -1,0 +1,5 @@
+[
+    "Gravity_Forms\\Gravity_Forms\\External_API\\GF_API_Response_Factory",
+    "Gravity_Forms\\Gravity_Forms\\Template_Library\\Templates\\GF_Templates_Store",
+    "Gravity_Forms\\Gravity_Forms\\Transients\\GF_Transient_Strategy"
+]

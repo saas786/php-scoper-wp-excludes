@@ -1,0 +1,8 @@
+[
+    "Gravity_Forms\\Gravity_Forms\\Theme_Layers\\Framework\\Traits\\Enqueues_Assets",
+    "Gravity_Forms\\Gravity_Forms\\Theme_Layers\\Framework\\Traits\\Has_Block_Settings",
+    "Gravity_Forms\\Gravity_Forms\\Theme_Layers\\Framework\\Traits\\Has_Settings_Fields",
+    "Gravity_Forms\\Gravity_Forms\\Theme_Layers\\Framework\\Traits\\Modifies_Markup",
+    "Gravity_Forms\\Gravity_Forms\\Theme_Layers\\Framework\\Traits\\Outputs_Form_CSS_Properties",
+    "Redirects_On_Save"
+]

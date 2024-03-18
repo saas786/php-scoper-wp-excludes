@@ -1,0 +1,19 @@
+[
+    "cmb2_ajax",
+    "cmb2_autoload_classes",
+    "cmb2_dir",
+    "cmb2_do_oembed",
+    "cmb2_get_field",
+    "cmb2_get_field_value",
+    "cmb2_get_metabox",
+    "cmb2_get_metabox_form",
+    "cmb2_get_metabox_sanitized_values",
+    "cmb2_get_oembed",
+    "cmb2_get_option",
+    "cmb2_metabox_form",
+    "cmb2_options",
+    "cmb2_print_metabox_form",
+    "cmb2_update_option",
+    "cmb2_utils",
+    "new_cmb2_box"
+]

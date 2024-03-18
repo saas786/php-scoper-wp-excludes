@@ -1,0 +1,13 @@
+[
+    "kbp_enter_title_here",
+    "kbp_get_default_settings",
+    "kbp_is_knowledgebase",
+    "kbp_is_knowledgebase_archive",
+    "kbp_is_knowledgebase_single",
+    "kbp_is_knowledgebase_tax",
+    "kbp_knowledgebase_base",
+    "kbp_post_type_archive_title",
+    "kbp_post_updated_messages",
+    "knowledgebase_register_post_types",
+    "knowledgebase_register_taxonomies"
+]

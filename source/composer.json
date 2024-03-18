@@ -1,0 +1,60 @@
+{
+    "require": {
+        "php": ">=8.2",
+        "ext-gettext": "*",
+        "ext-hash": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "composer/installers": "^1.12 || ^2.0",
+        "php-stubs/gravity-forms-stubs": "2.9.3",
+        "php-stubs/wordpress-stubs": "7.0.0 as 6.0",
+        "php-stubs/woocommerce-stubs": "10.8.0",
+        "php-stubs/wordpress-globals": "dev-master",
+        "wpackagist-plugin/event-tickets": "5.28.3",
+        "wpackagist-plugin/the-events-calendar": "6.16.3",
+        "justintadlock/message-board": "dev-dev",
+        "hbp/knowledgebase": "dev-master",
+        "lipemat/phpstan-wordpress": "^4.4.2"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/php-stubs/wordpress-stubs"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/saas786/message-board"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/saas786/saas-knowledgebase"
+        },
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*"
+            ]
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "phpstan/extension-installer": true
+        },
+        "platform": {
+            "php": "8.2"
+        },
+        "process-timeout": 0
+    },
+    "extra": {
+        "installer-paths": {
+            "vendor/{$name}/": [
+                "type:wordpress-plugin"
+            ]
+        }
+    }
+}
