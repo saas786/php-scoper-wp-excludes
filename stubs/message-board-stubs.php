@@ -1,7 +1,7 @@
 <?php
 /**
- * Generated stub declarations for Tribe Events Calendar & Addons.
- * @see https://evnt.is
+ * Generated stub declarations for Message Board.
+ * @see https://github.com/saas786/message-board
  * @see https://github.com/saas786/php-scoper-wp-excludes
  */
 

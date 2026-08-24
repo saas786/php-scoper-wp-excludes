@@ -1,0 +1,23 @@
+# Directories
+/.git             export-ignore
+/.github          export-ignore
+/generated/.gitkeep export-ignore
+/source           export-ignore
+/stubs            export-ignore
+
+# Files
+/.gitattributes   export-ignore
+/.gitignore       export-ignore
+/boot.sh          export-ignore
+/composer.lock    export-ignore
+/finder-*.php     export-ignore
+/generate-excludes.inc.php export-ignore
+/generate.sh      export-ignore
+/LICENSE.REPLACE-ME.txt export-ignore
+
+# What consumers actually install is generated/*.json. Everything above is
+# how those files are produced, and is only needed in a clone.
+#
+# NOTE: this file was previously named `gitattributes`, with no leading dot,
+# so git never read it and none of these rules applied. Every dist archive
+# shipped the full 8 MB tree, source/ and stubs/ included.

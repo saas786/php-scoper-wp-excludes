@@ -1,6 +1,6 @@
 <?php
 /**
- * Generated stub declarations for Tribe Events Calendar & Addons.
+ * Generated stub declarations for The Events Calendar.
  * @see https://evnt.is
  * @see https://github.com/saas786/php-scoper-wp-excludes
  */

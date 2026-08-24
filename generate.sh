@@ -1,11 +1,21 @@
 #!/usr/bin/env bash
 #
-# Generate Tribe Events Calendar & Addons stubs from the source directory.
+# Generate stubs from the source directory, one file per plugin.
 #
 
 set -ex
 
-HEADER=$'/**\n * Generated stub declarations for Tribe Events Calendar & Addons.\n * @see https://evnt.is\n * @see https://github.com/saas786/php-scoper-wp-excludes\n */'
+# One header per plugin. A single shared header put "Tribe Events Calendar &
+# Addons" and a link to evnt.is at the top of the Message Board and
+# Knowledgebase stubs, which have nothing to do with either.
+header() {
+    printf '/**\n * Generated stub declarations for %s.\n * @see %s\n * @see https://github.com/saas786/php-scoper-wp-excludes\n */' "$1" "$2"
+}
+
+HEADER_TEC=$(header "The Events Calendar" "https://evnt.is")
+HEADER_ET=$(header "Event Tickets" "https://evnt.is")
+HEADER_MB=$(header "Message Board" "https://github.com/saas786/message-board")
+HEADER_KB=$(header "Knowledgebase" "https://github.com/saas786/saas-knowledgebase")
 
 FILE="stubs/the-events-calendar-stubs.php"
 FILE_ET="stubs/event-tickets-stubs.php"
@@ -24,7 +34,7 @@ test -d "source/vendor/knowledgebase"
     --include-inaccessible-class-nodes \
     --force \
     --finder=finder-the-events-calendar.php \
-    --header="$HEADER" \
+    --header="$HEADER_TEC" \
     --functions \
     --classes \
     --interfaces \
@@ -35,7 +45,7 @@ test -d "source/vendor/knowledgebase"
     --include-inaccessible-class-nodes \
     --force \
     --finder=finder-event-tickets.php \
-    --header="$HEADER" \
+    --header="$HEADER_ET" \
     --functions \
     --classes \
     --interfaces \
@@ -46,7 +56,7 @@ test -d "source/vendor/knowledgebase"
     --include-inaccessible-class-nodes \
     --force \
     --finder=finder-message-board.php \
-    --header="$HEADER" \
+    --header="$HEADER_MB" \
     --functions \
     --classes \
     --interfaces \
@@ -57,7 +67,7 @@ test -d "source/vendor/knowledgebase"
     --include-inaccessible-class-nodes \
     --force \
     --finder=finder-knowledgebase.php \
-    --header="$HEADER" \
+    --header="$HEADER_KB" \
     --functions \
     --classes \
     --interfaces \
